@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 
     int r;
-    float PI = 3.14;
+    const float PI = 3.14;
 
     cout << "Enter the radius : ";
     cin >> r;
