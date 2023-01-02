@@ -1,29 +1,3 @@
 {
-  "files.associations": {
-    ".htaccess": "ini",
-    "*.tcc": "cpp",
-    "cctype": "cpp",
-    "clocale": "cpp",
-    "cstdarg": "cpp",
-    "cstdint": "cpp",
-    "cstdio": "cpp",
-    "cstdlib": "cpp",
-    "cwchar": "cpp",
-    "cwctype": "cpp",
-    "exception": "cpp",
-    "system_error": "cpp",
-    "type_traits": "cpp",
-    "initializer_list": "cpp",
-    "iosfwd": "cpp",
-    "iostream": "cpp",
-    "istream": "cpp",
-    "limits": "cpp",
-    "new": "cpp",
-    "ostream": "cpp",
-    "stdexcept": "cpp",
-    "streambuf": "cpp",
-    "typeinfo": "cpp",
-    "vector": "cpp"
-  },
-  "C_Cpp.errorSquiggles": "Disabled"
+  "C_Cpp.errorSquiggles": "disabled"
 }
