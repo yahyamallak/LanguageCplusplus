@@ -2,6 +2,7 @@
   "C_Cpp.errorSquiggles": "disabled",
   "files.associations": {
     ".htaccess": "ini",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "xstring": "cpp"
   }
 }
