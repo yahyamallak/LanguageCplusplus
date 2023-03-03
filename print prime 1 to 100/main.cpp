@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 using namespace std;
 
@@ -14,14 +15,17 @@ int ReadPositiveNumber(string Message) {
         cin >> Number;
 
     } while(Number < 0);
+
+    return Number;
 }
 
 enPrimeNotPrime CheckPrime(int Number) {
-    for(int i = 2; i <= Number; i++) {
-        if(i != Number) {
-            if((Number % i) == 0) {
-                return enPrimeNotPrime::NotPrime;
-            }
+
+    int HalfNumber = round(Number / 2);
+
+    for(int i = 2; i <= HalfNumber; i++) {
+        if((Number % i) == 0) {
+            return enPrimeNotPrime::NotPrime;
         }
     }
     return enPrimeNotPrime::Prime;
