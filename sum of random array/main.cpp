@@ -36,18 +36,15 @@ void FillArray(int arr[100], int & arrLength) {
     }
 }
 
-int MinNumberInArray(int arr[100], int arrLength) {
+int SumArray(int arr[100], int arrLength) {
     
-    int minNumber = arr[0];
+    int sum = 0;
     
     for(int i = 0; i < arrLength; i++){
-
-        if(arr[i] < minNumber) {
-            minNumber = arr[i];
-        }
+        sum += arr[i];
     }
 
-    return minNumber;
+    return sum;
 }
 
 void PrintArray(int arr[100], int arrLength) {
@@ -76,8 +73,8 @@ int main() {
 
     PrintArray(arr, arrLength);
 
-    cout << "Min number is : ";
-    cout << MinNumberInArray(arr, arrLength);
+    cout << "Sum of Array is : ";
+    cout << SumArray(arr, arrLength);
 
     return 0;
 }
