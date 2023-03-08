@@ -7,6 +7,9 @@
 using namespace std;
 
 
+enum enNumberType { Odd = 1, Even = 2};
+
+
 int ReadPositiveNumber(string Message) {
     int Number;
 
@@ -28,6 +31,13 @@ int RandomNumber(int from, int to) {
     return number;
 }
 
+enNumberType CheckNumberType(int Num) {
+    if(Num % 2 == 0)
+        return enNumberType::Even;
+    else
+        return enNumberType::Odd;
+}
+
 
 void AddArrayElement(int arr[100], int element, int & arrLength) {
     arr[arrLength] = element;
@@ -44,8 +54,12 @@ void FillArray(int arr[100], int & arrLength) {
 
 
 void CopyArray(int arr2[100], int arr[100], int & arrLength, int & length) {
-    for(int i = 0; i < arrLength; i++)
-        AddArrayElement(arr2, arr[i], length);
+    for(int i = 0; i < arrLength; i++) {
+        if(CheckNumberType(arr[i]) == enNumberType::Odd) {
+            AddArrayElement(arr2, arr[i], length);
+        }
+    }
+        
 }
 
 void PrintArray(int arr[100], int arrLength) {
@@ -79,7 +93,7 @@ int main() {
 
     CopyArray(arr2, arr, arrLength, length);
 
-    cout << "Array 2 elements : ";
+    cout << "Array 2 odd elements : ";
     PrintArray(arr2, length);
 
     return 0;
