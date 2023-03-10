@@ -5,6 +5,7 @@
     ".htaccess": "ini",
     "iostream": "cpp",
     "xstring": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "cmath": "cpp"
   }
 }
