@@ -35,17 +35,24 @@ void PrintMatrix(int matrix[3][3]) {
     }
 }
 
-void SumRowsMatrix(int matrix[3][3]) {
+int SumRowsMatrix(int matrix[3][3], int row) {
 
     int sum = 0;
 
-    for(int i = 0 ; i < 3; i++) {
-        for(int j = 0 ; j < 3; j++) {
-            sum += matrix[i][j];
-        }
-        cout << "Row " << i + 1 << " sum = " << sum << "\n";
-        sum = 0;
+    for(int i = 0; i < 3; i++) {
+        sum += matrix[row][i];
     }
+
+    return sum;
+
+}
+
+void PrintSumRowsMatrix(int matrix[3][3]) {
+    
+    for(int i = 0; i < 3; i++) {
+        cout << "Row " << i + 1 << " sum = " << SumRowsMatrix(matrix, i) << "\n";
+    }
+
 }
 
 
@@ -65,7 +72,7 @@ int main() {
 
     cout << "The following are the sums of each row in the random matrix: " << endl;
 
-    SumRowsMatrix(matrix);
+    PrintSumRowsMatrix(matrix);
 
     return 0;
 }
