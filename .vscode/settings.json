@@ -8,6 +8,8 @@
     "ostream": "cpp",
     "cmath": "cpp",
     "xutility": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "string": "cpp",
+    "istream": "cpp"
   }
 }
