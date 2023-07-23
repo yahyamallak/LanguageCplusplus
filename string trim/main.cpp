@@ -19,7 +19,7 @@ string TrimLeft(string sentence, char delimeter = ' ') {
 
     for(int i = 0; i < sentence.length(); i++) {
         if(sentence[i] != delimeter) {
-            return sentence.substr(i, sentence.length() - 1);
+            return sentence.substr(i, sentence.length() - i);
         }
     }
 
