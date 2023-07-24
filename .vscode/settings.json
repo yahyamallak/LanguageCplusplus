@@ -10,6 +10,8 @@
     "xutility": "cpp",
     "vector": "cpp",
     "string": "cpp",
-    "istream": "cpp"
+    "istream": "cpp",
+    "ios": "cpp",
+    "iomanip": "cpp"
   }
 }
