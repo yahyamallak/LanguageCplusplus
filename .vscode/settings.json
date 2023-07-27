@@ -12,6 +12,8 @@
     "string": "cpp",
     "istream": "cpp",
     "ios": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "iosfwd": "cpp",
+    "xmemory": "cpp"
   }
 }
