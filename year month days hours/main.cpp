@@ -48,18 +48,10 @@ int numberOfDaysInMonth(int year, short month) {
         return 0;
     }
 
-    if(month == 2) {
-        return isYearLeap(year) ? 29 : 28;
-    }
+    int days[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-    int months[] = {1, 3, 5, 7, 8, 10, 12};
+    return (month == 2 && isYearLeap(year)) ? days[month - 1] + 1 : days[month - 1];
 
-    for(int i = 0; i < 12; i++) {
-        if(months[i] == month)
-            return 31;
-    }
-
-    return 30;
 }
 
 int numberOfHoursInMonth(int year, short month) {
